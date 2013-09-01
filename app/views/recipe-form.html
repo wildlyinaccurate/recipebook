@@ -1,0 +1,14 @@
+<form role="form" name="recipe-form">
+    <div class="form-group">
+        <label for="recipeName">Recipe Name</label>
+        <input ng-model="recipe.name" type="text" class="form-control" id="recipeName">
+    </div>
+
+    <div class="form-group">
+        <label for="recipeUrl">Recipe URL</label>
+        <input ng-model="recipe.url" type="text" class="form-control" id="recipeUrl">
+    </div>
+
+    <button ng-click="cancel()" class="btn">Cancel</button>
+    <button ng-click="save()" ng-disabled="form.$invalid" type="submit" class="btn btn-success">Save Recipe</button>
+</form>

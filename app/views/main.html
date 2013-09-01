@@ -1,0 +1,11 @@
+<div class="pull-right">
+    <button class="btn btn-primary" ng-click="addRecipe()">Add a Recipe</button>
+</div>
+
+<div class="row">
+    <div ng-repeat="recipe in recipes" class="col-md-4">
+        <div class="recipe">
+            <h3><a href="{{recipe.url}}">{{recipe.name}}</a></h3>
+        </div>
+    </div>
+</div>
